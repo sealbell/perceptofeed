@@ -1,6 +1,6 @@
 # perceptofeed
 
-perceptofeed 是一个基于 LLM 的 AI 用户智能反馈平台项目，可以对用户的反馈进行分析总结分类打分等。perceptofeed 的作用是把通过 Web 界面问答式 通过文件或者文字 传递进来的数据或者表格然后通过自定义的 Prompt 生成表格，生成的表格可以存储到后端的 mysql 数据库中。
+perceptofeed 是一个基于 LLM 的 AI 用户智能反馈平台项目，暂时支持 ChatGPt API ，但是也可以很容易扩展其他的 api，可以对用户的反馈进行分析总结分类打分等。perceptofeed 的作用是把通过 Web 界面问答式 通过文件或者文字 传递进来的数据或者表格然后通过自定义的 Prompt 生成表格，生成的表格可以存储到后端的 mysql 数据库中。
 
 数据如下：
 
