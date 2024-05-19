@@ -1,5 +1,19 @@
 # perceptofeed
-perceptofeed
+
+perceptofeed 是一个基于 LLM 的 AI 用户智能反馈平台项目，可以对用户的反馈进行分析总结分类打分等。perceptofeed 的作用是把通过 Web 界面问答式 通过文件或者文字 传递进来的数据或者表格然后通过自定义的 Prompt 生成表格，生成的表格可以存储到后端的 mysql 数据库中。
+
+数据如下：
+
+```
+Your dubbing Account? (Enter your Dubbing UID)	Choose the voice as your gift!	HOW OLD ARE YOU?	What is your gender?	are you subscribed to dubbing ai	what is your biggest holdback?	Are you MORE willing To purchase DUbbing AI for following services?	are you willing to chat with dubbing team for further improvement?	HOW DO YOU LIKE IT? ANY COMMENTS OR SUGGESTIONS?	any features you want but not included in dubbing ai	are you willing to chat with dubbing team for further improvement?	Where are you now	is the Current two subscription PLANS CLEAR ON what's included 	Are you SUBSCRIBED to following APPS&Services	Are you willing to recommend subscription to your friends(both of you gets an reward)	For the past 3 months, who's your most viewed YT channel/Tiktok influencer /Twitch streamer	What online payment methods do you commonly use?	what
+V5EQKX4V	Sakura	14-18	Male	Not yet:(	I don't really have anything that's my biggest holdback.	I don't really have any features I want in dubbing ai	No thanks	It's pretty decent, I use it for many purposes as trolling my friends or talking with people who I don't feel comfortable with sharing my actual voice	Nothing	No thanks							
+V5EPGEXV	Madeline (A cute girl with a charming voice)	14-18	Male	Yes! XD				its cool, just real time voice would be amazing, thats all	real time	No thanks							
+6X3X93RV	Madeline (A cute girl with a charming voice)	19-23	Male	Not yet:(	Não ter mais vozes, é bem dificil ter só uma semana 	acredito que não tenha nada a mais	Sure! (Dubbing may get in touch with you via email soon)	Gostei de tudo, muito bom e ajuda muito nas minhas personagens de  rpg	Acredito que já tenha tudpo	Sure! (Dubbing may get in touch with you via email soon)							
+6DJ5MY96	Sakura	14-18	Male	Yes! XD				A voice is so good.A girl voice is so real.I like a game voice.	No	No thanks							
+VM3R45QV	Patrick	19-23	Male	Yes! XD				algunas voces se escuchan raras al hablar rapido pero estanbastante bein	Que sea todo gratis que aqui somos clase obrera	No thanks		
+// ..........					
+```
+
 
 ### 1. 界面设计
 
