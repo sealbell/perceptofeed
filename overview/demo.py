@@ -1,26 +1,29 @@
+from openai import AsyncOpenAI
 import chainlit as cl
+client = AsyncOpenAI()
 
+# Instrument the OpenAI client
+cl.instrument_openai()
 
-@cl.step
-def tool():
-    return "Response from the tool!"
+settings = {
+    "model": "deepseek-chat",
+    "temperature": 0,
+    # ... more settings
+}
 
-
-@cl.on_message  # this function will be called every time a user inputs a message in the UI
-async def main(message: cl.Message):
-    """
-    This function is called every time a user inputs a message in the UI.
-    It sends back an intermediate response from the tool, followed by the final answer.
-
-    Args:
-        message: The user's message.
-
-    Returns:
-        None.
-    """
-
-    # Call the tool
-    tool()
-
-    # Send the final answer.
-    await cl.Message(content="This is the final answer").send()
+@cl.on_message
+async def on_message(message: cl.Message):
+    response = await client.chat.completions.create(
+        messages=[
+            {
+                "content": "You are a helpful bot, you always reply in Spanish",
+                "role": "system"
+            },
+            {
+                "content": message.content,
+                "role": "user"
+            }
+        ],
+        **settings
+    )
+    await cl.Message(content=response.choices[0].message.content).send()
